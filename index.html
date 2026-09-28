@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EarthFall-B4R 3045</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div>
+      <div class="brand">EARTHFALL-B4R 3045</div>
+      <div class="sub">SURVIVE • RESIST • RECLAIM</div>
+    </div>
+    <div class="levelBox">LEVEL <b id="level">0</b></div>
+  </header>
+
+  <main>
+    <section class="world" id="world" aria-label="Realtime game world">
+      <div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div>
+      <div class="ground"></div><div class="river"></div>
+      <div class="settlement" id="settlement"></div>
+      <div class="player" id="player">🧑‍🚀</div>
+      <div class="marker" id="marker">◎</div>
+      <div class="worldLabel" id="worldLabel">THE REMAINING EARTH</div>
+      <div class="toast" id="toast">Explore the world.</div>
+    </section>
+
+    <section class="hud">
+      <div class="meter"><span>❤️ Health</span><b id="healthTxt">100</b><i><em id="healthBar"></em></i></div>
+      <div class="meter"><span>💧 Water</span><b id="waterTxt">80</b><i><em id="waterBar"></em></i></div>
+      <div class="meter"><span>🫁 O₂</span><b id="oxygenTxt">90</b><i><em id="oxygenBar"></em></i></div>
+      <div class="meter"><span>⚡ Energy</span><b id="energyTxt">100</b><i><em id="energyBar"></em></i></div>
+      <div class="meter"><span>☢️ Radiation</span><b id="radiationTxt">0</b><i><em id="radiationBar"></em></i></div>
+    </section>
+
+    <section class="controls">
+      <button id="left">◀ Move</button><button id="right">Move ▶</button>
+      <button id="action">ACTIVATE</button><button id="scan">SCAN</button>
+      <button id="build">BUILD</button><button id="save">SAVE</button>
+      <button id="reset">RESET</button>
+    </section>
+
+    <section class="panel">
+      <div>
+        <h2 id="objectiveTitle">Objective</h2>
+        <p id="objective">Reach the human settlement.</p>
+        <div class="progress"><em id="progress"></em></div>
+      </div>
+      <div class="inventory">
+        <h2>Inventory</h2>
+        <div id="inventory"></div>
+      </div>
+      <div class="ai">
+        <b>: Spaze AI :</b>
+        <span id="aiText">Survival systems online. Find shelter.</span>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
